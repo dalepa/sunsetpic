@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+
+
+	cd /ws/sunset
+
+        YEAR=`date +%Y`
+
+
+	cd $YEAR
+	rm -rf *.gif
+
+	for MIN in `ls -vd */|sed 's/\///'`; do
+		files=`ls -rt $MIN/*.jpg`
+		echo $files
+		env MAGICK_TMPDIR=/ws/tmp convert -delay 4 -scale 80%  -loop 0 $files $YEAR-$MIN.gif
+	done
+
+
+	

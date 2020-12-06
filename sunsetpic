@@ -1,0 +1,11 @@
+#!/bin/bash
+	wget -q  http://bay.pancamo.com:8080/cam/Cam2/preset=3 -O /dev/null
+	sleep 5
+
+	OFFSET=$1
+	cd /ws/sunset
+	YEAR=`date +%Y`
+	DATE=`date +%Y%m%d%H%M`
+	mkdir -p ./$YEAR/$OFFSET
+	wget -q http://bay.pancamo.com:8080/image/Cam2
+	mv Cam2 $YEAR/$OFFSET/Cam2.$DATE.jpg
