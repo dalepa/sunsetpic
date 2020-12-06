@@ -1,0 +1,20 @@
+0 0 * * * /ws/cleanup
+#* * * * * /ws/nest/nest.get >>/ws/nest/nest.get.log 2>&1
+#* * * * * ( sleep 15 ; /ws/nest/nest.get >>/ws/nest/nest.get.log 2>&1 )
+#* * * * * ( sleep 30 ; /ws/nest/nest.get >>/ws/nest/nest.get.log 2>&1 )
+#*/10 * * * * /ws/nest/nest.tl >>/ws/nest/nest.tl.log 2>&1
+50 16 * * * /ws/sunset/sunwait/sunwait wait set offset 0 28.38133116N 96.27320832W; /ws/sunset/sunsetpic 0 
+50 16 * * * /ws/sunset/sunwait/sunwait wait set offset 1 28.38133116N 96.27320832W; /ws/sunset/sunsetpic 1 
+50 16 * * * /ws/sunset/sunwait/sunwait wait set offset 2 28.38133116N 96.27320832W; /ws/sunset/sunsetpic 2 
+50 16 * * * /ws/sunset/sunwait/sunwait wait set offset 3 28.38133116N 96.27320832W; /ws/sunset/sunsetpic 3 
+50 16 * * * /ws/sunset/sunwait/sunwait wait set offset 4 28.38133116N 96.27320832W; /ws/sunset/sunsetpic 4 
+50 16 * * * /ws/sunset/sunwait/sunwait wait set offset 5 28.38133116N 96.27320832W; /ws/sunset/sunsetpic 5 
+50 16 * * * /ws/sunset/sunwait/sunwait wait set offset 6 28.38133116N 96.27320832W; /ws/sunset/sunsetpic 6 
+50 16 * * * /ws/sunset/sunwait/sunwait wait set offset 8 28.38133116N 96.27320832W; /ws/sunset/sunsetpic 8 
+50 16 * * * /ws/sunset/sunwait/sunwait wait set offset 10 28.38133116N 96.27320832W; /ws/sunset/sunsetpic 10
+50 16 * * * /ws/sunset/sunwait/sunwait wait set offset 12 28.38133116N 96.27320832W; /ws/sunset/sunsetpic 12 
+50 16 * * * /ws/sunset/sunwait/sunwait wait set offset 11 28.38133116N 96.27320832W; /ws/sunset/sunsetpic 11 
+50 16 * * * /ws/sunset/sunwait/sunwait wait set offset 15 28.38133116N 96.27320832W; /ws/sunset/sunsetpic 15
+50 16 * * * /ws/sunset/sunwait/sunwait wait set offset 20 28.38133116N 96.27320832W; /ws/sunset/sunsetpic 20
+50 16 * * * /ws/sunset/sunwait/sunwait wait set offset 25 28.38133116N 96.27320832W; /ws/sunset/sunsetpic 25
+50 16 * * * /ws/sunset/sunwait/sunwait wait set offset 30 28.38133116N 96.27320832W; /ws/sunset/sunsetpic 30
